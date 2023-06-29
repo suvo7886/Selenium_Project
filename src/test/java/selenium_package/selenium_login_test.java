@@ -11,7 +11,7 @@
 	        Thread.sleep(3000);
 	        driver.manage().window().maximize();
 	        Thread.sleep(3000);
-	        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+	        driver.findElement(By.id("user-name")).sendKeys("demo");
 	        Thread.sleep(3000);
 	        driver.findElement(By.id("password")).sendKeys("secret_sauce");
 	        Thread.sleep(3000);

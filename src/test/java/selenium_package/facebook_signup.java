@@ -12,22 +12,22 @@ public class facebook_signup {
 	        driver.manage().window().maximize();
 	        Thread.sleep(3000);
 	        WebElement fnameInput = driver.findElement(By.name("firstname"));
-	        fnameInput.sendKeys("Susmita");
+	        fnameInput.sendKeys("Sumana");
 	        Thread.sleep(2000);
 	        WebElement lnameInput = driver.findElement(By.name("lastname"));
 	        lnameInput.sendKeys("Sarkar");
 	        Thread.sleep(2000);
 	        WebElement emailInput = driver.findElement(By.name("reg_email__"));
-	        emailInput.sendKeys("susmita@gmail.com");
+	        emailInput.sendKeys("sumana@gmail.com");
 	        Thread.sleep(2000);
 	        WebElement reemailInput = driver.findElement(By.name("reg_email_confirmation__"));
-	        reemailInput.sendKeys("susmita@gmail.com");
+	        reemailInput.sendKeys("sumana@gmail.com");
 	        Thread.sleep(2000);
 	        WebElement passwordInput = driver.findElement(By.name("reg_passwd__"));
-	        passwordInput.sendKeys("123456++");
+	        passwordInput.sendKeys("123456+++");
 	        Thread.sleep(2000);
 	        Select select = new Select(driver.findElement(By.name("birthday_year")));
-	        select.selectByVisibleText("1990");
+	        select.selectByVisibleText("1991");
 	        Thread.sleep(2000);
 	        WebElement genderInput = driver.findElement(By.name("sex"));
 	        if (!genderInput.isSelected()) {
@@ -39,6 +39,6 @@ public class facebook_signup {
 	        Thread.sleep(2000);
 	        System.out.println("Hurray! Your registration successfull. Please verify your email id to continue...");
 	        Thread.sleep(3000);
-	        driver.quit();
+	        //driver.quit();
 	    }
 }
